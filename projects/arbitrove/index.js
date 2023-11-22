@@ -25,7 +25,6 @@ async function tvl(_, _b, _cb, { api }) {
     chain: "arbitrum"
   });
 
-  console.log(logs)
   const alpTokens = logs.map((l) => l.coin);
   const gmlpTokens = gmlpTargets.output.map((l) => l.coin);
   let tokenBalances = {};
